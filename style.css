@@ -9,8 +9,8 @@
     justify-content: space-around;
 }
 .content-left {
-    width: 1500px; 
-    height: 1300px;
+    width: 1000px; 
+    height: 700px;
     border-radius: 30px;
     border: 5px solid black;
     padding: 30px;
@@ -20,8 +20,8 @@
     justify-content: center;
 }
 .content-right {
-    width: 1500px;
-    height: 1000px;
+    width: 700px;
+    height: 500px;
     background-color: rgb(165, 118, 157);
     border-radius: 30px;
     border: 5px solid black;
@@ -38,7 +38,7 @@ body {
 h1 { 
     color: rgb(10, 4, 4); 
     font-size:xx-large;
-    margin-left: 1500px;
+    margin-left: 800px;
 }
 h5{
     font-size: x-large;
