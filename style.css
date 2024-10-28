@@ -69,3 +69,110 @@ ul {
 ol {
     font-size: x-large;
 }
+.header { 
+    display: flex; 
+    justify-content: flex-end; /* Выравнивание по правому краю */
+    background-color: #a08282;  
+    padding: 10px;  
+} 
+ 
+.header a { 
+    margin-left: 20px;  
+    text-decoration: none;  
+    color: #333;  
+} 
+ 
+.header a:hover { 
+    text-decoration: underline;  
+}
+.block {
+    background-color: rgb(216, 181, 169);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    height: 200px;
+}
+.conteiner {
+    background-color: rgb(158, 89, 123);
+    
+    padding: 30px;
+}
+.image1 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.conteiner2 {
+    background-color: rgb(158, 89, 123);
+    padding: 30px;
+}
+.block2 {
+    background-color: rgb(216, 181, 169);
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.conteiner3{
+    background-color: burlywood;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+.block3{
+    background-color: rgb(100, 68, 68);
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
+.container4{
+    background-color: white;
+    height: 800px;
+    width: 800px;
+    border: 5px solid black;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block4{
+    width: 200px;
+    height: 200px;
+    border: 3px solid red;
+    position: relative;
+    top: 150px;
+    left: 150px;
+}
+.block5{
+    width: 200px;
+    height: 200px;
+    border: 3px solid blue;
+    position: relative;
+    left: 70px;
+    top: 270px;
+}
+.block6{
+    width: 200px;
+    height: 200px;
+    border: 3px solid green;
+    position: relative;
+    top: 390px;
+    left: -10px;
+}
+.image2 {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
