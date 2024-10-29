@@ -4,9 +4,9 @@
     border: 2px solid black;
 }
 .content {
+    margin: 70px;
     display: flex;
-    display:flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .content-left {
     width: 1000px; 
@@ -18,6 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 1 1 300px;
 }
 .content-right {
     width: 700px;
@@ -29,6 +30,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex: 1 1 300px;
 
 }
 body { 
@@ -43,35 +45,41 @@ h1 {
 h5{
     font-size: x-large;
     color: rgb(83, 40, 60);
+    text-align: center;
 }
 a {
     font-size: x-large;
     color: rgb(41, 10, 24);
     box-shadow: 10px 5px 5px red;
+    text-align: center;
 }
 h3 {
     font-size: x-large;
     color: rgb(83, 40, 60);
+    text-align: center;
 }
 h4 {
     font-size: x-large;
     color: rgb(83, 40, 60);
+    text-align: center;
 }
 
 p {
     font-size: x-large;
-    
+    text-align: center;
 }
 
 ul {
+    text-align: center;
     font-size: x-large;
 }
 ol {
     font-size: x-large;
+    text-align: center;
 }
 .header { 
     display: flex; 
-    justify-content: flex-end; /* Выравнивание по правому краю */
+    justify-content: flex-end;
     background-color: #a08282;  
     padding: 10px;  
 } 
