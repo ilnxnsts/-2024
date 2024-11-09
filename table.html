@@ -2,7 +2,7 @@
 <html lang="ru"> 
 <head> 
     <meta charset="UTF-8">
-    <title>Лабораторная работа 4</title> 
+    <title>Лабораторная работа 5</title> 
     <link rel="stylesheet" href="table.css" /> 
 </head> 
 <body>
@@ -50,4 +50,42 @@
             <td>Under the influence</td>
         </tr>
     </table>
-</body>
+    <form id="addform">  
+        <fieldset>  
+            <legend>Добавление нового альбома:</legend>  
+            <label>Название альбома:</label>  
+            <input type="text" name="albumName" required><br>  
+            <label>Год выпуска:</label>  
+            <input type="number" name="releaseYear" required><br>  
+            <label>Популярная песня:</label>  
+            <input type="text" name="popularSong" required><br>  
+            <label>Любимая песня:</label>  
+            <input type="text" name="favoriteSong" required><br><br>  
+            <input type="submit" value="Добавить" class="button">  
+        </fieldset>  
+    </form>  
+
+    
+    <script>  
+        function addRecord(form) { 
+        const table = document.querySelector("table"); 
+        const newRow = table.insertRow(-1); 
+         
+        const albumName = form.albumName.value; 
+        const releaseYear = form.releaseYear.value; 
+        const popularSong = form.popularSong.value; 
+        const favoriteSong = form.favoriteSong.value; 
+        newRow.insertCell(0).innerText = albumName; 
+        newRow.insertCell(1).innerText = releaseYear; 
+        newRow.insertCell(2).innerText = popularSong; 
+        newRow.insertCell(3).innerText = favoriteSong; 
+        form.reset(); 
+    } 
+
+    document.getElementById("addform").addEventListener("submit", function (e) {    
+        e.preventDefault();    
+        addRecord(e.target);    
+    });    
+    </script>  
+</body> 
+</html>
